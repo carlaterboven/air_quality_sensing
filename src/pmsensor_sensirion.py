@@ -3,10 +3,9 @@ import RPi.GPIO as GPIO
 
 
 class PMSensorSensirion:
-    # TODO maybe declare pins
-    # PIN_CLK =
-    # PIN_DT =
-    # BUTTON_PIN =
+    # RX and TX from Raspi side (switched on sensor side)
+    GPIO_TX = 23    # sensor RX pin2
+    GPIO_RX = 24    # sensor TX pin3
 
     def __init__(self):
         self.__pm1 = 0

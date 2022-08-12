@@ -11,13 +11,13 @@ import gps as gps
 
 if __name__ ==  '__main__':
     print("Read and collect data. [Press Ctrl+C to exit!]")
-    # GPIO.setmode(GPIO.BCM)
+    GPIO.setmode(GPIO.BCM)
 
-    pmsensor1 = pmsensor_sensirion.PMSensorSensirion()
+    pmsensor = pmsensor_sensirion.PMSensorSensirion()
     sensor = sensor.PMSensor5003()
 
-    # GPIO.setup(rotary.PIN_CLK, GPIO.IN, pull_up_down = GPIO.PUD_UP)
-    # GPIO.setup(rotary.PIN_DT, GPIO.IN, pull_up_down = GPIO.PUD_UP)
+    GPIO.setup(pmsensor.GPIO_RX, GPIO.IN)
+    GPIO.setup(pmsensor.GPIO_TX, GPIO.OUT)
     # GPIO.setup(rotary.BUTTON_PIN, GPIO.IN, pull_up_down = GPIO.PUD_UP)
 
     # rotary.set_clk_last(GPIO.input(rotary.PIN_CLK))
@@ -29,7 +29,8 @@ if __name__ ==  '__main__':
 
     try:
         while True:
-            pass
+            inputValue = GPIO.input(pmsensor.GPIO_RX)
+            print(inputValue)
 
     except KeyboardInterrupt:
             GPIO.cleanup()
