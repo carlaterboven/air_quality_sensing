@@ -1,11 +1,11 @@
 # coding=utf-8
 import RPi.GPIO as GPIO
-import pandas as pd
-import time
-from multiprocessing import Process
+#import pandas as pd
+#import time
+#from multiprocessing import Process
 import os
-import pmsensor_5003 as pmsensor_5003
-import pmsensor_sensirion as pmsensor_sensirion
+#import pmsensor_5003 as pmsensor_5003
+#import pmsensor_sensirion as pmsensor_sensirion
 import gps as gps
 
 
@@ -13,11 +13,11 @@ if __name__ ==  '__main__':
     print("Read and collect data. [Press Ctrl+C to exit!]")
     GPIO.setmode(GPIO.BCM)
 
-    pmsensor = pmsensor_sensirion.PMSensorSensirion()
-    sensor = sensor.PMSensor5003()
+#    pmsensor = pmsensor_sensirion.PMSensorSensirion()
+    #sensor = sensor.PMSensor5003()
 
-    GPIO.setup(pmsensor.GPIO_RX, GPIO.IN)
-    GPIO.setup(pmsensor.GPIO_TX, GPIO.OUT)
+#    GPIO.setup(pmsensor.GPIO_RX, GPIO.IN)
+#    GPIO.setup(pmsensor.GPIO_TX, GPIO.OUT)
     # GPIO.setup(rotary.BUTTON_PIN, GPIO.IN, pull_up_down = GPIO.PUD_UP)
 
     # rotary.set_clk_last(GPIO.input(rotary.PIN_CLK))
@@ -26,11 +26,14 @@ if __name__ ==  '__main__':
     # GPIO.add_event_detect(rotary.PIN_CLK, GPIO.BOTH, callback=rotary.turn_knob, bouncetime=50)
     # GPIO.add_event_detect(rotary.BUTTON_PIN, GPIO.FALLING, callback=rotary.counter_reset, bouncetime=50)
 
+    gps = gps.Gps()
+    print(gps.get_position())
 
     try:
         while True:
-            inputValue = GPIO.input(pmsensor.GPIO_RX)
-            print(inputValue)
+            #inputValue = GPIO.input(pmsensor.GPIO_RX)
+            #print(inputValue)
+            pass
 
     except KeyboardInterrupt:
             GPIO.cleanup()
