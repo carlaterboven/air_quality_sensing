@@ -15,7 +15,7 @@ for id in range(len(data)):
     file.write('\t\t<name>' + str(data.loc[id, 'Time']) + '</name>\n')
     file.write('\t\t<ExtendedData>\n')
     file.write('\t\t\t<Data name=' + '\"PM2.5\"' + '>\n')
-    file.write('\t\t\t\t<value>' + 'placeholdervalue' + '</value>\n')
+    file.write('\t\t\t\t<value>' + str(data.loc[id, 'PM2.5']) + '</value>\n')
     file.write('\t\t\t</Data>\n')
     file.write('\t\t</ExtendedData>\n')
     file.write('\t\t<Point>\n')
