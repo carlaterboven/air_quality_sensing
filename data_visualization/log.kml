@@ -6,7 +6,7 @@
 		<name>nan</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>7.0</value>
 			</Data>
 		</ExtendedData>
 		<Point>
@@ -14,201 +14,1312 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:36.000Z</name>
+		<name>2022-08-21T13:56:38.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>7.0</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029638333,52.410025,54.6</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:36.000Z</name>
+		<name>2022-08-21T13:56:43.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>4.666666666666667</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029638333,52.410025,54.6</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:36.000Z</name>
+		<name>2022-08-21T13:56:43.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>2.916666666666667</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029638333,52.410025,54.6</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:37.000Z</name>
+		<name>2022-08-21T13:56:53.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>1.9833333333333336</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029638333,52.410023333,53.4</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:37.000Z</name>
+		<name>2022-08-21T13:56:58.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>1.4972222222222225</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029638333,52.410023333,53.3</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:37.000Z</name>
+		<name>2022-08-21T13:56:58.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>1.2138888888888888</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029638333,52.410023333,53.3</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:38.000Z</name>
+		<name>2022-08-21T13:57:08.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>1.026736111111111</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029638333,52.410023333,53.3</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:38.000Z</name>
+		<name>2022-08-21T13:57:13.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.8918595679012346</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029638333,52.410023333,53.3</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:38.000Z</name>
+		<name>2022-08-21T13:57:13.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.7891859567901235</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029638333,52.410023333,53.3</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:39.000Z</name>
+		<name>2022-08-21T13:57:23.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.7081078142536475</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.02963,52.410031667,53.2</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:39.000Z</name>
+		<name>2022-08-21T13:57:28.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.6423423178544706</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.02966,52.41003,53.3</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:39.000Z</name>
+		<name>2022-08-21T13:57:28.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.5878724859888055</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.02966,52.41003,53.3</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:39.000Z</name>
+		<name>2022-08-21T13:57:38.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.6134194632849147</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.02967,52.41003,51.1</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:40.000Z</name>
+		<name>2022-08-21T13:57:43.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.5742279642189944</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029676667,52.410041667,49.6</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:40.000Z</name>
+		<name>2022-08-21T13:57:43.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.5358892477636872</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029676667,52.410041667,49.6</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:40.000Z</name>
+		<name>2022-08-21T13:57:53.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.5021111322213934</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029736667,52.410165,44.8</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:41.000Z</name>
+		<name>2022-08-21T13:57:58.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.472339507345633</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029751667,52.410183333,41.0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>2022-08-17T16:08:41.000Z</name>
+		<name>2022-08-21T13:57:58.000Z</name>
 		<ExtendedData>
 			<Data name="PM2.5">
-				<value>placeholdervalue</value>
+				<value>0.4459126056497702</value>
 			</Data>
 		</ExtendedData>
 		<Point>
-			<coordinates>13.029645,52.409973333,52.2</coordinates>
+			<coordinates>13.029751667,52.410183333,41.0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:08.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.4222956302824885</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029748333,52.410218333,39.4</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:13.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.4010616966801185</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029753333,52.410253333,40.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:13.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.3818664407581872</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029753333,52.410253333,40.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:24.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.3644289756851386</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029581667,52.410391667,35.1</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:28.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.3485178739868808</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029483333,52.410405,33.9</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:28.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.3339407149594752</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029483333,52.410405,33.9</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:39.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.3205361813445951</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029256667,52.410471667,34.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:43.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.3081680067164665</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029175,52.410473333,32.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:43.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.2967202859541595</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029175,52.410473333,32.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:54.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.2860938029639365</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02895,52.410508333,38.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:58.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.2762031267654645</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028861667,52.410503333,39.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:58:58.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.2669742944117891</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028861667,52.410503333,39.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:09.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.2270929467003684</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028681667,52.410513333,40.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:13.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.2190028165666778</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028596667,52.41052,41.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:13.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.2123236122519611</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028596667,52.41052,41.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:24.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.2060663889214846</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028421667,52.410531667,35.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:28.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.2001685108033745</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028313333,52.410535,38.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:28.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1945991489406317</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028313333,52.410535,38.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:39.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1893315565510692</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02811,52.410478333,30.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1843418347833607</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027935,52.410465,34.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.179608545869584</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027935,52.410465,34.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:54.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1751124035577947</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02772,52.410496667,38.9</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1708360096085189</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027685,52.410496667,35.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T13:59:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1667636281304306</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027685,52.410496667,35.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:09.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1401537188211461</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027425,52.410478333,35.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:14.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1364478604182477</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02732,52.410468333,34.8</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:14.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1334010404438749</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02732,52.410468333,34.8</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:24.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1304978944775292</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027071667,52.41047,36.9</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:29.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1277187061349485</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026978333,52.41046,35.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:29.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1250554837986724</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026978333,52.41046,35.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:39.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1625011096759734</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026813333,52.410451667,36.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1796568845034504</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026713333,52.410453333,39.4</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1765318631635278</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026713333,52.410453333,39.4</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:54.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1731421106257269</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026471667,52.410436667,38.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1883915205671431</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02636,52.410436667,38.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:00:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.203425300373948</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02636,52.410436667,38.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:09.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1822040232209633</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026148333,52.410421667,40.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:14.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1961790179512449</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026058333,52.410401667,41.1</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:18.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1930375692750214</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02603,52.410396667,42.0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:24.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1897125011741529</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026028333,52.410396667,41.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:29.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1531618750195692</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026008333,52.4104,41.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:33.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1500518340167142</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.025998333,52.410356667,41.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:39.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1475814811938179</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026091667,52.410296667,41.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1451997060506955</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026181667,52.41026,39.8</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1428937454070421</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026181667,52.41026,39.8</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:54.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1406599037754929</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02629,52.410178333,40.4</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1384948470269014</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026298333,52.410173333,40.1</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:01:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1363954454780134</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026298333,52.410173333,40.1</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:09.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.119652874198206</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026503333,52.410078333,40.0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:14.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1176761286115682</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026598333,52.41003,40.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:18.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1159668018373081</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026668333,52.410008333,40.0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:24.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1002248845329198</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026783333,52.409963333,37.1</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:29.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0986142345074016</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026865,52.409913333,39.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:33.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.097241290883663</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.026933333,52.40988,40.1</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:39.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1094221796065359</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027041667,52.409835,39.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1081256290614204</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027136667,52.409801667,39.8</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:49.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.1066858635402818</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027213333,52.40976,40.0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:54.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0922946216044192</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027288333,52.409715,40.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:02:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0909268541231335</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027366667,52.409663333,41.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:04.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0897585677737105</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027453333,52.409616667,42.9</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:09.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0886219820971713</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027553333,52.40958,41.9</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:14.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0875138516308292</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027638333,52.409538333,42.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:19.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0864330957515954</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02773,52.409506667,42.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:24.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0853787119970071</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.027816667,52.409461667,44.1</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:29.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0843497465713929</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02792,52.409411667,43.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:34.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.083345291136134</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028055,52.409403333,45.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:39.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0707365731527457</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028158333,52.409415,47.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0697785813006062</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02828,52.409428333,46.9</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:49.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0689747566056887</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028363333,52.409441667,47.1</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:54.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0681907276023111</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028485,52.40946,45.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:03:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0674243414178034</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028585,52.40948,44.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:04.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.066674992762833</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028706667,52.40946,47.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:09.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0659421194865525</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028825,52.409468333,46.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:14.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0652251840805005</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.028938333,52.409485,47.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:19.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0645236721710691</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029035,52.409498333,47.4</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:24.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0638370912860112</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02913,52.409513333,47.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:29.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0631649697008959</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029263333,52.409515,47.4</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:34.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0625068553577412</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029375,52.409506667,48.8</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:39.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0618623148505891</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029483333,52.409521667,51.8</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0612309324732382</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029616667,52.409528333,50.4</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:49.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0606123093247323</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029636667,52.409663333,43.8</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:54.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0600060624685617</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029638333,52.409731667,41.8</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:04:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0594118241418486</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02963,52.409796667,40.0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:04.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0588292410110859</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029638333,52.409858333,39.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:09.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0486425888558758</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.02963,52.409905,36.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:14.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0480823103700559</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029658333,52.40998,35.6</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:19.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.047623418022359</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029663333,52.410033333,36.4</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:24.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0565198450282463</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029658333,52.410028333,37.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:29.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0560788874539652</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029658333,52.41003,37.3</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:34.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0555603567656327</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029588333,52.410053333,38.7</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:39.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0550505486978693</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029546667,52.410058333,37.4</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:44.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.054550004943224</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029541667,52.409996667,38.1</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:49.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.054058482186993</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029525,52.409971667,39.0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:49.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0535757387804158</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029525,52.409971667,39.0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:05:59.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0531015415682492</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029498333,52.409948333,38.9</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:06:04.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0526356655788543</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029495,52.409938333,39.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:06:04.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0521778936687832</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029495,52.409938333,39.5</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:06:14.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0517280161852032</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029501667,52.40994,39.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:06:19.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0512858306456373</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029501667,52.40994,39.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:06:19.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0508511414339969</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029501667,52.40994,39.2</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>2022-08-21T14:06:29.000Z</name>
+		<ExtendedData>
+			<Data name="PM2.5">
+				<value>0.0504237595119499</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>13.029501667,52.40994,39.2</coordinates>
 		</Point>
 	</Placemark>
 </Document>
