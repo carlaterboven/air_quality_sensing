@@ -1,12 +1,13 @@
 # coding=utf-8
 import RPi.GPIO as GPIO
 #import pandas as pd
-#import time
+import time
 #from multiprocessing import Process
 import os
-#import pmsensor_5003 as pmsensor_5003
+import pmsensor_5003 as pmsensor_5003
 #import pmsensor_sensirion as pmsensor_sensirion
 import gps as gps
+import write_data as data_logger
 
 
 if __name__ ==  '__main__':
@@ -14,7 +15,7 @@ if __name__ ==  '__main__':
     GPIO.setmode(GPIO.BCM)
 
 #    pmsensor = pmsensor_sensirion.PMSensorSensirion()
-    #sensor = sensor.PMSensor5003()
+    pmsensor = pmsensor_5003.PMSensor5003()
 
 #    GPIO.setup(pmsensor.GPIO_RX, GPIO.IN)
 #    GPIO.setup(pmsensor.GPIO_TX, GPIO.OUT)
@@ -27,13 +28,17 @@ if __name__ ==  '__main__':
     # GPIO.add_event_detect(rotary.BUTTON_PIN, GPIO.FALLING, callback=rotary.counter_reset, bouncetime=50)
 
     gps = gps.Gps()
-    print(gps.get_position())
+    datalogger = data_logger.DataLogger('../data/log.csv')
 
     try:
         while True:
-            #inputValue = GPIO.input(pmsensor.GPIO_RX)
-            #print(inputValue)
-            pass
+            pmsensor.read_data()
+            time.sleep(5)
+            pmsensor.prepare_data()
+            print(pmsensor.get_data())
+            gps.compute_position()
+            print(gps.get_data())
+            datalogger.write_data(gps.get_data(), pmsensor.get_data())
 
     except KeyboardInterrupt:
             GPIO.cleanup()
