@@ -13,12 +13,12 @@ class PMSensor7003(pmsensor.PMSensor):
     def read_data(self):
         try:
             data = self.__pms7003.read()
-            # print(data)
+            #print(data)
             self.add_sampling_steps(1)
-            self.add_pm1(data.pm_ug_per_m3(1.0))
-            self.add_pm2_5(data.pm_ug_per_m3(2.5))
-            self.add_pm10(data.pm_ug_per_m3(10.0))
-            self.add_pm10s(data.pm_ug_per_m3(10.0))
+            self.add_pm1(data['pm1_0'])
+            self.add_pm2_5(data['pm2_5'])
+            self.add_pm10(data['pm10'])
+            self.add_pm10s(data['pm10'])
             # TODO: read function has option of returning values as dict or OrderedDict
             # https://github.com/tomek-l/pms7003
             # sensor.read(ordered=True)
