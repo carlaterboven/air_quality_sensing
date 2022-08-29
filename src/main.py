@@ -4,9 +4,12 @@ import RPi.GPIO as GPIO
 import time
 #from multiprocessing import Process
 import os
-import pmsensor_5003 as pmsensor_5003
-#import pmsensor_sensirion as pmsensor_sensirion
-import gps as gps
+import gps
+import pmsensor_5003
+import pmsensor_7003
+import pmsensor_sensirion
+import temp_hum_bme680 as humiditysensor
+import gassensor_cjmcu6814 as gassensor
 import write_data as data_logger
 
 
