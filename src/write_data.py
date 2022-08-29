@@ -13,16 +13,26 @@ class DataLogger:
     def get_file(self):
         return self.__file
     
-    def write_header(self):
+    def write_header(self, header_list):
+        header = 'LogID'
+        for title in header_list:
+            header += ','
+            header += title
+        header += '\n'
         file = open(self.__file, 'w')
-        file.write('LogID' + ',' + 'Time' + ',' + 'Latitude' + ',' + 'Longitude' + ',' + 'Altitude' + ',' + 'PM2.5' + '\n')
+        file.write(header)
         file.close()
         self.__has_header = True
         
-    def write_data(self, gps_data, pmsensor_data):
+    def write_data(self, data):
         if self.__has_header is False:
-            self.write_header()
+            self.write_header(data.keys())
+        data_row = str(self.__logid)
+        for key, value in data.items():
+            data_row += ','
+            data_row += str(data[key])
+        data_row += '\n'
         file = open(self.__file, 'a')
-        file.write(str(self.__logid) + ',' + str(gps_data['time']) + ',' + str(gps_data['lat']) + ',' + str(gps_data['lon']) + ',' + str(gps_data['alt']) + ',' + str(pmsensor_data['pm2.5']) + '\n')
+        file.write(data_row)
         file.close()
         self.__logid += 1

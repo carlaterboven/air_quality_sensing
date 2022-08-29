@@ -27,15 +27,18 @@ if __name__ ==  '__main__':
         while True:
             pmsensor_sps.reset_data()
             pmsensor_5003.reset_data()
+            pmsensor_7003.reset_data()
             # collect data for 5 seconds
             t_end = time.time() + 5
             while time.time() < t_end:
                 pmsensor_sps.read_data()
                 pmsensor_5003.read_data()
+                pmsensor_7003.read_data()
             print(pmsensor_sps.get_data())
             print(pmsensor_5003.get_data())
+            print(pmsensor_7003.get_data())
             gps.compute_position()
-            datalogger.write_data(gps.get_data(), pmsensor_sps.get_data())
+            datalogger.write_data(gps.get_data() | pmsensor_sps.get_data() | pmsensor_5003.get_data() | pmsensor_7003.get_data())
 
     except KeyboardInterrupt:
             GPIO.cleanup()

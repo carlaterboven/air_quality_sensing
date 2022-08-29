@@ -18,10 +18,10 @@ class PMSensorSensirion(pmsensor.PMSensor):
     def get_data(self):
         self.prepare_data()
         return {
-            'pm1': self.get_pm1(),
-            'pm2.5': self.get_pm2_5(),
-            'pm10': self.get_pm10(),
-            'pm10s': self.get_pm10s()
+            'SPS_PM1': self.get_pm1(),
+            'SPS_PM2.5': self.get_pm2_5(),
+            'SPS_PM10': self.get_pm10(),
+            #'SPS_PM10s': self.get_pm10s()
             }
     
     def read_data(self):
