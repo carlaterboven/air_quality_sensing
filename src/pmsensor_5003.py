@@ -6,7 +6,7 @@ class PMSensor5003(pmsensor.PMSensor):
     def __init__(self):
         super().__init__()
         self.__pms5003 = PMS5003(
-            device = '/dev/ttyAMA0',
+            device = '/dev/ttyAMA1',
             baudrate = 9600
         )
 
