@@ -6,7 +6,7 @@ class PMSensorSensirion(pmsensor.PMSensor):
 
     def __init__(self):
         super().__init__()
-        self.__sps = SPS30(1)
+        self.__sps = SPS30(3) # 1 when temp_hum_sensor not connected, else 3
         self.__sps.start_measurement()
         sleep(2) # seems to be necessary for I2C bus
         
