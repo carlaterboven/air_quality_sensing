@@ -9,7 +9,7 @@ import pmsensor_5003
 import pmsensor_7003
 import pmsensor_sensirion
 import temp_hum_bme680 as humiditysensor
-import gassensor_cjmcu6814 as gassensor
+import gassensor_cjmcu6814
 import write_data as data_logger
 
 
@@ -22,6 +22,7 @@ if __name__ ==  '__main__':
     pmsensor_7003 = pmsensor_7003.PMSensor7003()
     
     temp_hum_sensor = humiditysensor.HumSensor()
+    gassensor = gassensor_cjmcu6814.GasSensor()
 
     gps = gps.Gps()
     datalogger = data_logger.DataLogger('../data/log.csv')
@@ -32,20 +33,27 @@ if __name__ ==  '__main__':
             pmsensor_5003.reset_data()
             pmsensor_7003.reset_data()
             temp_hum_sensor.reset_data()
-            # collect data for 5 seconds
-            t_end = time.time() + 5
+            gassensor.reset_data()
+            # collect data for 600 seconds (10minutes)
+            t_end = time.time() + 600
             while time.time() < t_end:
                 #pmsensor_sps.read_data()
                 pmsensor_5003.read_data()
                 pmsensor_7003.read_data()
                 temp_hum_sensor.read_data()
+                gassensor.read_data()
+                time.sleep(5) # measure every 5 seconds
             #print(pmsensor_sps.get_data())
             #print(pmsensor_5003.get_data())
             #print(pmsensor_7003.get_data())
             #print(temp_hum_sensor.get_data())
-            gps.compute_position()
-            #datalogger.write_data(gps.get_data() | pmsensor_sps.get_data() | pmsensor_5003.get_data() | pmsensor_7003.get_data() | temp_hum_sensor.get_data())
-            datalogger.write_data(gps.get_data() | pmsensor_5003.get_data() | pmsensor_7003.get_data() | temp_hum_sensor.get_data())
+            #print(gassensor.get_data())
+            try:
+                gps.compute_position()
+            except ConnectionResetError:
+                print('ConnectionResetError')
+            #datalogger.write_data(gps.get_data() | pmsensor_sps.get_data() | pmsensor_5003.get_data() | pmsensor_7003.get_data() | temp_hum_sensor.get_data() | gassensor.get_data())
+            datalogger.write_data(gps.get_data() | pmsensor_5003.get_data() | pmsensor_7003.get_data() | temp_hum_sensor.get_data() | gassensor.get_data())
 
     except KeyboardInterrupt:
             GPIO.cleanup()

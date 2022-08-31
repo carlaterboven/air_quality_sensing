@@ -5,6 +5,7 @@ import board
 class HumSensor():
 
     def __init__(self):
+        self.__sampling_steps = 0
         self.__temperature = 0
         self.__rel_humidity = 0
         self.__pressure = 0
@@ -26,14 +27,16 @@ class HumSensor():
         pass
 
     def read_data(self):
-        self.__temperature = self.__bme.temperature # +temperature_offset # in °C
-        self.__rel_humidity = self.__bme.relative_humidity
-        self.__pressure = self.__bme.pressure
+        self.__temperature += self.__bme.temperature # +temperature_offset # in °C
+        self.__rel_humidity += self.__bme.relative_humidity
+        self.__pressure += self.__bme.pressure
+        self.__sampling_steps += 1
 
     def reset_data(self):
         self.__temperature = 0
         self.__rel_humidity = 0
         self.__pressure = 0
+        self.__sampling_steps = 0
         
     def get_temperature(self):
         return self.__temperature
@@ -43,9 +46,15 @@ class HumSensor():
     
     def get_pressure(self):
         return self.__pressure
+    
+    def prepare_data(self):
+        if self.__sampling_steps > 0:
+            self.__temperature = (self.__temperature / self.__sampling_steps)
+            self.__rel_humidity = (self.__rel_humidity / self.__sampling_steps)
+            self.__pressure = (self.__pressure / self.__sampling_steps)
         
     def get_data(self):
-        #self.prepare_data()
+        self.prepare_data()
         return {
             'Temperature': self.get_temperature(),
             'Relative_Humidity': self.get_rel_humidity(),
