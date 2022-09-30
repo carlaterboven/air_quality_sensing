@@ -38,6 +38,12 @@ class HumSensor():
         self.__pressure = 0
         self.__sampling_steps = 0
         
+    def set_nan_data(self):
+        self.__temperature = 'n/a'
+        self.__rel_humidity = 'n/a'
+        self.__pressure = 'n/a'
+        self.__sampling_steps = 0
+        
     def get_temperature(self):
         return self.__temperature
     

@@ -4,7 +4,7 @@ import RPi.GPIO as GPIO
 import time
 #from multiprocessing import Process
 import os
-import gps
+import gps_sensor
 import pmsensor_5003
 import pmsensor_7003
 import pmsensor_sensirion
@@ -12,60 +12,77 @@ import temp_hum_bme680 as humiditysensor
 import gassensor_cjmcu6814
 import write_data as data_logger
 
+def try_sensor_read(sensor):
+    try:
+        sensor.read_data()
+    except KeyboardInterrupt:
+        raise 
+    except:
+        sensor.set_nan_data()
+        
+def try_gps_read(gps):
+    try:
+        gps.compute_position()
+        if gps.get_data()['lat'] != 'n/a':
+            # use green LED to show successfull GPS
+            GPIO.output(GREEN_LED, GPIO.HIGH)
+        else:
+            GPIO.output(GREEN_LED, GPIO.LOW)
+    except KeyboardInterrupt:
+        raise
+    except:
+        print('GPS Error')
+        GPIO.output(GREEN_LED, GPIO.LOW)
+
 
 if __name__ ==  '__main__':
-    print("Read and collect data. [Press Ctrl+C to exit!]")
+    print('Read and collect data. [Press Ctrl+C to exit!]')
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(21, GPIO.OUT) # pin for LED to indicate successfull measurement
-    GPIO.output(21, GPIO.LOW)
+    RED_LED = 20      # pin for LED to indicate start of measurements and chance to connect usb of gps sensor
+    GPIO.setup(RED_LED, GPIO.OUT) 
+    GPIO.output(RED_LED, GPIO.HIGH)
+    GREEN_LED = 21    # pin for LED to indicate successfull gps measurement
+    GPIO.setup(GREEN_LED, GPIO.OUT) 
+    GPIO.output(GREEN_LED, GPIO.LOW)
     
-    print("Please connect GPS sensor via USB.")
+    print('Please connect GPS sensor via USB.')
     # wait 10 seconds to connect GPS sensor
     time.sleep(10)
+    GPIO.output(RED_LED, GPIO.LOW) # gps sensor has to be connected by now
 
-    #pmsensor_sps = pmsensor_sensirion.PMSensorSensirion()
+    pmsensor_sps = pmsensor_sensirion.PMSensorSensirion()
     pmsensor_5003 = pmsensor_5003.PMSensor5003()
     pmsensor_7003 = pmsensor_7003.PMSensor7003()
-    
     temp_hum_sensor = humiditysensor.HumSensor()
     gassensor = gassensor_cjmcu6814.GasSensor()
-
-    gps = gps.Gps()
+    gps = gps_sensor.Gps()
+    
     file_name = 'log' + str(time.time()) + '.csv'
     datalogger = data_logger.DataLogger('/home/pi/Dokumente/air_quality_sensing/data/' + file_name)
-
+        
+    #sensor_list = [pmsensor_sps, pmsensor_5003, pmsensor_7003, temp_hum_sensor, gassensor]
+    sensor_list = [pmsensor_5003, pmsensor_7003, temp_hum_sensor, gassensor]
+    
     try:
         while True:
-            #pmsensor_sps.reset_data()
-            pmsensor_5003.reset_data()
-            pmsensor_7003.reset_data()
-            temp_hum_sensor.reset_data()
-            gassensor.reset_data()
+            for sensor in sensor_list:
+                sensor.reset_data()
             # collect data for 3 seconds
             t_end = time.time() + 3
             while time.time() < t_end:
-                #pmsensor_sps.read_data()
-                pmsensor_5003.read_data()
-                pmsensor_7003.read_data()
-                temp_hum_sensor.read_data()
-                gassensor.read_data()
+                for sensor in sensor_list:
+                    try_sensor_read(sensor)
                 time.sleep(1) # measure every second
-            #print(pmsensor_sps.get_data())
-            #print(pmsensor_5003.get_data())
-            #print(pmsensor_7003.get_data())
-            #print(temp_hum_sensor.get_data())
-            #print(gassensor.get_data())
-            try:
-                gps.compute_position()
-                if gps.get_data()['lat'] != 'n/a':
-                    # use LED to show successfull GPS
-                    GPIO.output(21, GPIO.HIGH)
-            except ConnectionResetError:
-                print('ConnectionResetError')
-            #datalogger.write_data(gps.get_data() | pmsensor_sps.get_data() | pmsensor_5003.get_data() | pmsensor_7003.get_data() | temp_hum_sensor.get_data() | gassensor.get_data())
-            datalogger.write_data(gps.get_data() | pmsensor_5003.get_data() | pmsensor_7003.get_data() | temp_hum_sensor.get_data() | gassensor.get_data())
+            
+            try_gps_read(gps)
+            
+            data = gps.get_data()
+            for sensor in sensor_list:
+                data = data | sensor.get_data()
+            datalogger.write_data(data)
 
     except KeyboardInterrupt:
+            GPIO.output(GREEN_LED, GPIO.LOW)
             GPIO.cleanup()
             pmsensor_7003.__del__()
-            #pmsensor_sps.__del__()
+            pmsensor_sps.__del__()

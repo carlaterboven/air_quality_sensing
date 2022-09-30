@@ -45,6 +45,13 @@ class PMSensor:
         self.__pm10 = 0
         self.__pm10s.clear()
         self.__sampling_steps = 0
+        
+    def set_nan_data(self):
+        self.__pm1 = 'n/a'
+        self.__pm2_5 = 'n/a'
+        self.__pm10 = 'n/a'
+        self.__pm10s.clear()
+        self.__sampling_steps = 0
 
     def prepare_data(self):
         if self.__sampling_steps > 0:

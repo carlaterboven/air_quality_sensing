@@ -48,6 +48,14 @@ class GasSensor():
         self.__sampling_steps_NH3 = 0
         self.__sampling_steps_NO2 = 0
         
+    def set_nan_data(self):
+        self.__CO = 'n/a'
+        self.__NH3 = 'n/a'
+        self.__NO2 = 'n/a'
+        self.__sampling_steps_CO = 0
+        self.__sampling_steps_NH3 = 0
+        self.__sampling_steps_NO2 = 0
+        
     def get_CO(self):
         return self.__CO
     
