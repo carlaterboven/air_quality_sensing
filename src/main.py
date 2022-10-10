@@ -60,8 +60,8 @@ if __name__ ==  '__main__':
     file_name = 'log' + str(time.time()) + '.csv'
     datalogger = data_logger.DataLogger('/home/pi/Dokumente/air_quality_sensing/data/' + file_name)
         
-    #sensor_list = [pmsensor_sps, pmsensor_5003, pmsensor_7003, temp_hum_sensor, gassensor]
-    sensor_list = [pmsensor_5003, pmsensor_7003, temp_hum_sensor, gassensor]
+    sensor_list = [pmsensor_sps, pmsensor_5003, pmsensor_7003, temp_hum_sensor, gassensor]
+    #sensor_list = [pmsensor_5003, pmsensor_7003, temp_hum_sensor, gassensor]
     
     try:
         while True:
@@ -80,6 +80,7 @@ if __name__ ==  '__main__':
             for sensor in sensor_list:
                 data = data | sensor.get_data()
             datalogger.write_data(data)
+            print('write data')
 
     except KeyboardInterrupt:
             GPIO.output(GREEN_LED, GPIO.LOW)

@@ -12,8 +12,8 @@ class HumSensor():
         # self.__gas = 0
         # self.__altitude = 0
         
-        # Create sensor object, communicating over the board's default I2C bus
-        i2c = board.I2C()   # uses board.SCL and board.SDA
+        # Create sensor object, communicating over the I2C bus 3
+        i2c = board.I2C()   # uses SDA 23 and SCL 24 for i2c bus 3
         self.__bme = adafruit_bme680.Adafruit_BME680_I2C(i2c)
         # change this to match the location's pressure (hPa) at sea level
         self.__bme.sea_level_pressure = 1013.25
