@@ -61,14 +61,15 @@ if __name__ ==  '__main__':
     datalogger = data_logger.DataLogger('/home/pi/Dokumente/air_quality_sensing/data/' + file_name)
         
     sensor_list = [pmsensor_sps, pmsensor_5003, pmsensor_7003, temp_hum_sensor, gassensor]
-    #sensor_list = [pmsensor_5003, pmsensor_7003, temp_hum_sensor, gassensor]
     
     try:
         while True:
             for sensor in sensor_list:
                 sensor.reset_data()
             # collect data for 3 seconds
-            t_end = time.time() + 3
+            # collect data for 1 minute
+            #t_end = time.time() + 3
+            t_end = time.time() + 60
             while time.time() < t_end:
                 for sensor in sensor_list:
                     try_sensor_read(sensor)
@@ -80,10 +81,16 @@ if __name__ ==  '__main__':
             for sensor in sensor_list:
                 data = data | sensor.get_data()
             datalogger.write_data(data)
-            print('write data')
-
+            #print('write data')
+    
     except KeyboardInterrupt:
             GPIO.output(GREEN_LED, GPIO.LOW)
             GPIO.cleanup()
             pmsensor_7003.__del__()
             pmsensor_sps.__del__()
+            
+    except Exception as e:
+        file = open('/home/pi/Dokumente/air_quality_sensing/data/errorfile.txt', 'a')
+        file.write(e)
+        file.write("finished with error")
+        file.close()
