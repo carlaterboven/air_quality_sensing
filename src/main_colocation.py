@@ -7,7 +7,6 @@ import pmsensor_5003
 import pmsensor_7003
 import pmsensor_sensirion
 import temp_hum_bme680 as humiditysensor
-import gassensor_cjmcu6814
 import write_data as data_logger
 
 def try_sensor_read(sensor):
@@ -36,7 +35,7 @@ def myloop():
         file_name = 'log' + str(time.time()) + '.csv'
         datalogger = data_logger.DataLogger('/home/pi/Dokumente/air_quality_sensing/data/' + file_name)
 
-        sensor_list = [pmsensor_sps, pmsensor_5003, pmsensor_7003, temp_hum_sensor, gassensor]
+        sensor_list = [pmsensor_sps, pmsensor_5003, pmsensor_7003, temp_hum_sensor]
 
         while True:
             for sensor in sensor_list:
