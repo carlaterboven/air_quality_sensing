@@ -6,7 +6,7 @@ class PMSensor7003(pmsensor.PMSensor):
     def __init__(self):
         super().__init__()
         self.__pms7003 = Pms7003Sensor('/dev/serial0')
-        
+
     def __del__(self):
         self.__pms7003.close()
 
@@ -19,9 +19,6 @@ class PMSensor7003(pmsensor.PMSensor):
             self.add_pm2_5(data['pm2_5'])
             self.add_pm10(data['pm10'])
             self.add_pm10s(data['pm10'])
-            # TODO: read function has option of returning values as dict or OrderedDict
-            # https://github.com/tomek-l/pms7003
-            # sensor.read(ordered=True)
             self.add_nc_0_3(data['n0_3'])
             self.add_nc_0_5(data['n0_5'])
             self.add_nc_1(data['n1_0'])
@@ -29,7 +26,7 @@ class PMSensor7003(pmsensor.PMSensor):
             self.add_nc_5(data['n5_0'])
             self.add_nc_10(data['n10'])
         except PmsSensorException:
-            print('Connection problem')      
+            print('Connection problem')
 
     def get_data(self):
         self.prepare_data()
@@ -45,4 +42,3 @@ class PMSensor7003(pmsensor.PMSensor):
             '7003_nc5': self.get_nc_5(),
             '7003_nc10': self.get_nc_10()
             }
-    

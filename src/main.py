@@ -51,7 +51,6 @@ if __name__ ==  '__main__':
     pmsensor_5003 = pmsensor_5003.PMSensor5003()
     pmsensor_7003 = pmsensor_7003.PMSensor7003()
     temp_hum_sensor = humiditysensor.HumSensor()
-    gassensor = gassensor_cjmcu6814.GasSensor()
     gps = gps_sensor.Gps()
 
     file_name = 'log' + str(time.time()) + '.csv'
