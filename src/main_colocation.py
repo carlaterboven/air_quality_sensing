@@ -1,9 +1,7 @@
 # coding=utf-8
 import RPi.GPIO as GPIO
-#import pandas as pd
 import time
 from datetime import datetime
-#from multiprocessing import Process
 import os
 import pmsensor_5003
 import pmsensor_7003
@@ -43,9 +41,7 @@ def myloop():
         while True:
             for sensor in sensor_list:
                 sensor.reset_data()
-            # collect data for 3 seconds
             # collect data for 1 minute
-            #t_end = time.time() + 3
             t_end = time.time() + 60
             while time.time() < t_end:
                 for sensor in sensor_list:
