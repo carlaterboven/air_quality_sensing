@@ -9,12 +9,12 @@ class PMSensorSensirion(pmsensor.PMSensor):
         self.__sps = SPS30(1) # i2c bus 1, temp_hum_sensor uses i2c bus 3
         self.__sps.start_measurement()
         sleep(2) # seems to be necessary for I2C bus
-        
+
     def __del__(self):
         self.__sps.stop_measurement()
         sleep(2) # seems to be necessary for I2C bus
-        self.__sps.start_fan_cleaning() # enables fan-cleaning manually for 10 seconds (referred by datasheet)
-    
+        self.__sps.start_fan_cleaning() # fan-cleaning for 10 seconds (recommended by datasheet)
+
     def get_data(self):
         self.prepare_data()
         return {
@@ -28,10 +28,10 @@ class PMSensorSensirion(pmsensor.PMSensor):
             'SPS_nc4': self.get_nc_4(),
             'SPS_nc10': self.get_nc_10()
             }
-    
+
     def read_data(self):
         while not self.__sps.read_data_ready_flag():
-            #print("New Measurement is not available!")
+            #print('measurement not available')
             if self.__sps.read_data_ready_flag() == self.__sps.DATA_READY_FLAG_ERROR:
                 raise Exception("DATA-READY FLAG CRC ERROR!")
 
@@ -42,7 +42,7 @@ class PMSensorSensirion(pmsensor.PMSensor):
             self.add_pm1(self.__sps.dict_values['pm1p0'])
             self.add_pm2_5(self.__sps.dict_values['pm2p5'])
             self.add_pm10(self.__sps.dict_values['pm10p0'])
-            self.add_pm10s(self.__sps.dict_values['pm10p0'])            
+            self.add_pm10s(self.__sps.dict_values['pm10p0'])
             self.add_nc_0_5(self.__sps.dict_values['nc0p5'])
             self.add_nc_1(self.__sps.dict_values['nc1p0'])
             self.add_nc_2_5(self.__sps.dict_values['nc2p5'])
