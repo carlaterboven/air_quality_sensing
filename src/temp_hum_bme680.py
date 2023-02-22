@@ -1,6 +1,6 @@
 import adafruit_bme680
 import time
-import board
+from adafruit_extended_bus import ExtendedI2C as I2C
 
 class HumSensor():
 
@@ -9,7 +9,7 @@ class HumSensor():
         self.__temperature = 0
         self.__rel_humidity = 0
         self.__pressure = 0
-        i2c = board.I2C()   # uses SDA 23 and SCL 24 for i2c bus 3
+        i2c = I2C(3)   # uses SDA 23 and SCL 24 for i2c bus 3
         self.__bme = adafruit_bme680.Adafruit_BME680_I2C(i2c)
         temperature_offset = 0 # TODO set this after colocation
 
